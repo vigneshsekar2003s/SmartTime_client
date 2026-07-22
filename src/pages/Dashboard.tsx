@@ -398,47 +398,51 @@ const exportPDF = () => {
 
           <div className="bg-blue-500 text-white rounded-xl p-6 shadow-lg">
 
-            <h3 className="text-lg font-semibold">
-              Total Tasks
-            </h3>
+          <h3 className="text-lg font-semibold">
+            Total Tasks
+          </h3>
 
-            <p className="text-3xl sm:text-5xl font-bold mt-3">
-              {tasks.length}
-            </p>
-
-          </div>
-
-          <div className="bg-white rounded-xl shadow-lg p-6">
-
-            <h3 className="text-sm sm:text-lg font-semibold">
-              Completed
-            </h3>
-
-            <p className="text-3xl sm:text-5xl font-bold mt-3">
-              {
-                tasks.filter(
-                  (task) => task.status === "Completed"
-                ).length
-              }
-            </p>
+          <p className="text-3xl sm:text-5xl font-bold mt-3">
+            {totalTasks}
+          </p>
 
           </div>
 
           <div className="bg-white rounded-xl shadow-lg p-6">
 
-            <h3 className="text-sm sm:text-lg font-semibold">
-              Pending
-            </h3>
+          <h3 className="text-sm sm:text-lg font-semibold">
+            Completed
+          </h3>
 
-            <p className="text-3xl sm:text-5xl font-bold mt-3">
-              {
-                tasks.filter(
-                  (task) => task.status === "Pending"
-                ).length
-              }
-            </p>
+          <p className="text-3xl sm:text-5xl font-bold mt-3">
+            {completedTasks}
+          </p>
 
           </div>
+
+          <div className="bg-white rounded-xl shadow-lg p-6">
+
+          <h3 className="text-sm sm:text-lg font-semibold">
+            Pending
+          </h3>
+
+          <p className="text-3xl sm:text-5xl font-bold mt-3">
+            {pendingTasks}
+          </p>
+
+          </div>
+
+          <div className="bg-white rounded-xl shadow-lg p-6">
+
+          <h3 className="text-sm sm:text-lg font-semibold">
+            Overdue
+          </h3>
+
+          <p className="text-3xl sm:text-5xl font-bold mt-3 text-red-600">
+            {overdueTasks}
+          </p>
+
+        </div>
 
         </div>
 
