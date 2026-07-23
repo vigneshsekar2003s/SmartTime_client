@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://smarttime-backend-8.onrender.com/api/auth",
+  baseURL: "https://smarttime-backend-10.onrender.com/api/auth",
 });
 
 // Register User
